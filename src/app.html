@@ -2,11 +2,14 @@
 <html lang="en" class="dark">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Demo of the initial SvelteKit + Skeleton UI starter template. UI by Skeleton Labs, not custom design." />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover" data-theme="gold-nouveau">
-		<div style="display: contents" class="h-full overflow-hidden">%sveltekit.body%</div>
+	<body data-sveltekit-preload-data="hover" data-theme="gold-nouveau" class="font-[Quicksand,sans-serif]">
+		<div style="display: contents" class="h-full">%sveltekit.body%</div>
 	</body>
 </html>
