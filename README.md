@@ -61,6 +61,16 @@ src/
     └── stack.ts         # Version list & copy
 ```
 
+## Deploying to Netlify
+
+Requires `netlify.toml` with `publish = "build"`. In the Netlify UI, set **Publish directory** to `build` (or leave blank so `netlify.toml` applies).
+
+```bash
+npm run build
+```
+
+Static assets live in `build/_app/immutable/`; the SSR handler is in `.netlify/functions-internal/` (generated at build time).
+
 ## License
 
 [The Unlicense](./LICENSE) — free to use, modify, and redistribute **without attribution** to this repo's author.
